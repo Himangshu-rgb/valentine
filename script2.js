@@ -25,3 +25,15 @@ yesBtn.addEventListener("click", () => {
 
   can1.style.display = "none";
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const noButton = document.getElementById("no");
+  const container = document.querySelector(".containar");
+  
+  noButton.addEventListener("click", function() {
+    const pleaseText = document.createElement("p");
+    pleaseText.textContent = "please<3";
+    container.appendChild(pleaseText);
+  });
+});
